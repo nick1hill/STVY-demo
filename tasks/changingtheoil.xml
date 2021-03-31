@@ -12,7 +12,7 @@
 <taskbody>
 <context><p>FIXME. </p></context>
 <steps>
-<stepsection>To change the oil:</stepsection>
+<stepsection>To change the oil: change</stepsection>
 <step><cmd>Remove the old oil filter.</cmd></step>
 <step><cmd>Drain the old oil.</cmd></step>
 <step><cmd>Install a new oil filter and gasket.</cmd></step>
