@@ -37,12 +37,6 @@ jobs:
         with:
           name: rel1English.pdf
           path: product-1/rel1-8/en-US/out/rel1English.pdf
-
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Check DITA OT version
-        run: dita --version
       - name: Build PDF Finnish release 1.8
         run: dita -i product-1/rel1-8/fi-FI/changes.ditamap -o product-1/rel1-8/fi-FI/out -f pdf --args.output.base="rel1Finnish"
       - name: Store PDF Finnish release 1.8
@@ -50,12 +44,6 @@ jobs:
         with:
           name: rel1Finnish.pdf
           path: product-1/rel1-8/en-US/out/rel1Finnish.pdf
-
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Check DITA OT version
-        run: dita --version
       - name: Build PDF Swedish release 1.8
         run: dita -i product-1/rel1-8/sv-SE/changes.ditamap -o product-1/rel1-8/sv-SE/out -f pdf --args.output.base="rel1Swedish"
       - name: Store PDF Swedish release 1.8
