@@ -31,23 +31,13 @@ jobs:
       - name: Check DITA OT version
         run: dita --version
       - name: Build PDF English release 1.8
-        run: dita -i product-1/rel1-8/en-US/changes.ditamap -o product-1/rel1-8/en-US/out -f pdf --args.output.base="rel1English"
-      - name: Store PDF English release 1.8
-        uses: actions/upload-artifact@v2
-        with:
-          name: rel1English.pdf
-          path: product-1/rel1-8/en-US/out/rel1English.pdf
+        run: dita -i product-1/rel1-8/en-US/changes.ditamap -o product-1/rel1-8/out -f pdf --args.output.base="rel1English"
       - name: Build PDF Finnish release 1.8
-        run: dita -i product-1/rel1-8/fi-FI/changes.ditamap -o product-1/rel1-8/fi-FI/out -f pdf --args.output.base="rel1Finnish"
-      - name: Store PDF Finnish release 1.8
-        uses: actions/upload-artifact@v2
-        with:
-          name: rel1Finnish.pdf
-          path: product-1/rel1-8/en-US/out/rel1Finnish.pdf
+        run: dita -i product-1/rel1-8/fi-FI/changes.ditamap -o product-1/rel1-8/out -f pdf --args.output.base="rel1Finnish"
       - name: Build PDF Swedish release 1.8
-        run: dita -i product-1/rel1-8/sv-SE/changes.ditamap -o product-1/rel1-8/sv-SE/out -f pdf --args.output.base="rel1Swedish"
-      - name: Store PDF Swedish release 1.8
+        run: dita -i product-1/rel1-8/sv-SE/changes.ditamap -o product-1/rel1-8/out -f pdf --args.output.base="rel1Swedish"
+      - name: Store PDFs release 1.8
         uses: actions/upload-artifact@v2
         with:
-          name: rel1Swedish.pdf
-          path: product-1/rel1-8/en-US/out/rel1Swedish.pdf
+          name: *.pdf
+          path: product-1/rel1-8/out/*.pdf
