@@ -1,6 +1,6 @@
 # Suomen teknisen viestinnän yhdistys demonstration repository
 
-This repository is intended to demonstrate a solution based on GitHub for editing DITA files and generating PDF files using GitHub.
+This repository is intended to be used in a workshop where we can work through how GitHub can be used in a docs-as-code solution.
 
 The DITA source files are taken from https://github.com/dita-ot/docs repository, which are licensed under the terms of its Apache License 2.0.
 
