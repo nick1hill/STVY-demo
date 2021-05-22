@@ -27,7 +27,10 @@ jobs:
     
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: checkout submodules
+        uses: textbook/git-checkout-submodule-action@master
       - name: Check DITA OT version
         run: dita --version
       - name: Build PDF English release 1.8
