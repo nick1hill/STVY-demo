@@ -29,9 +29,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check DITA OT version
         run: dita --version
-      - name: Build PDF
+      - name: Build PDF old
         run: dita -i sequence.ditamap -o out -f pdf
+      - name: Build PDF Eng release 1.8
+        run: dita -i product-1/rel1-8/en-US/sequence.ditamap -o product-1/rel1-8/en-US/out -f pdf --args.output.base="test"
       - uses: actions/upload-artifact@v2
         with:
-          name: sequence.pdf
-          path: out/sequence.pdf
+          name: test.pdf
+          path: product-1/rel1-8/en-US/out/test.pdf
