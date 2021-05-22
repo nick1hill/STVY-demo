@@ -1,3 +1,6 @@
 [submodule "product-1/rel1-8/en-US/images"]
 	path = product-1/rel1-8/en-US/images
 	url = https://github.com/nick1hill/images.git
+[submodule "product-1/rel1-8/fi-FI/images"]
+	path = product-1/rel1-8/fi-FI/images
+	url = https://github.com/nick1hill/images.git

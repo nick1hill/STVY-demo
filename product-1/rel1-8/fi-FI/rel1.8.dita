@@ -175,6 +175,12 @@
           <li>#1585 Properties table cell misalligned if no value column #1373 (maintenance 3)</li>
           <li>#1603 XSD schema for Machinery Task does not allow attributes in prelreqs element (maintenance 3)</li>
         </ul>
+                <p>
+        <fig>
+        <title>Sample</title>
+            <image href="images/image/carwash.jpg"/>
+        </fig>
+        </p>
       </section>
     </refbody>
   </reference>
