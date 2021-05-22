@@ -39,5 +39,5 @@ jobs:
       - name: Store PDFs release 1.8
         uses: actions/upload-artifact@v2
         with:
-          name: *.pdf
+          name: pdf-output
           path: product-1/rel1-8/out/*.pdf
