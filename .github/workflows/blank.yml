@@ -41,7 +41,3 @@ jobs:
         with:
           name: rel1English.pdf
           path: product-1/rel1-8/en-US/out/rel1English.pdf
-          name: rel1Finnish.pdf
-          path: product-1/rel1-8/fi-FI/out/rel1Finnish.pdf
-          name: rel1Swedish.pdf
-          path: product-1/rel1-8/sv-SE/out/rel1Swedish.pdf
