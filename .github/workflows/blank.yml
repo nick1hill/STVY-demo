@@ -32,7 +32,7 @@ jobs:
       - name: Build PDF old
         run: dita -i sequence.ditamap -o out -f pdf
       - name: Build PDF Eng release 1.8
-        run: dita -i product-1/rel1-8/en-US/sequence.ditamap -o product-1/rel1-8/en-US/out -f pdf --args.output.base="test"
+        run: dita -i product-1/rel1-8/en-US/changes.ditamap -o product-1/rel1-8/en-US/out -f pdf --args.output.base="test"
       - uses: actions/upload-artifact@v2
         with:
           name: test.pdf
